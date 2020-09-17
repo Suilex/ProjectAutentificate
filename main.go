@@ -17,5 +17,5 @@ func main() {
 	r.HandleFunc("/del", controllers.DelAll).Methods("POST")
 	r.HandleFunc("/refresh", controllers.Refresh).Methods("POST")
 
-	_ = http.ListenAndServe(":8000", r)
+	_ = http.ListenAndServe(":8080", r)
 }
